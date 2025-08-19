@@ -12,14 +12,18 @@
     "deploy": "firebase deploy --only hosting",
     "deploy:ci": "firebase deploy --only hosting --token $FIREBASE_TOKEN --non-interactive"
   },
-  "keywords": ["clima", "temperatura", "conversor", "promedio-movil"],
+  "keywords": [
+    "clima",
+    "temperatura",
+    "conversor",
+    "promedio-movil"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^9.33.0",
-    "jest": "^30.0.5",
     "eslint-plugin-jest": "^28.10.0",
-    "firebase-tools": "^12.0.0"
+    "jest": "^30.0.5"
   },
   "jest": {
     "testEnvironment": "node",
