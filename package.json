@@ -8,7 +8,9 @@
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "deploy": "firebase deploy --only hosting",
+    "deploy:ci": "firebase deploy --only hosting --token $FIREBASE_TOKEN --non-interactive"
   },
   "keywords": ["clima", "temperatura", "conversor", "promedio-movil"],
   "author": "",
