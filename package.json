@@ -1,0 +1,38 @@
+{
+  "name": "clima-conversion",
+  "version": "1.0.0",
+  "description": "Conversor de temperaturas y cálculo de promedios móviles",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": ["clima", "temperatura", "conversor", "promedio-movil"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.33.0",
+    "jest": "^30.0.5",
+    "eslint-plugin-jest": "^28.10.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!**/node_modules/**",
+      "!**/__tests__/**"
+    ]
+  }
+}
